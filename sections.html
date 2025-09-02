@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="src/sections.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <img src="images/add.svg" alt="">
+        <ul>
+          <li> <img class="img-balance" src="images/balance.svg"> <a href="index.html">Menu</a> </li>
+          <li> <img class="img-sections" src="images/sections.svg"> <a href="#">Section</a>  </li>
+        </ul>       
+      </nav>
+    </header>
+
+    <main>
+      <section id="detalle-comple">
+          <h1>Detalles de gastos/ingresos</h1>
+          <div class="botones">
+              <button class="btn-todo">Todo</button>
+              <button class="btn-alimentacion">Alimentación</button>
+              <button class="btn-educacion">Educación</button>
+              <button class="btn-trabajo">Trabajo</button>
+              <button class="btn-salud">Salud</button>
+              <button class="btn-ocio">Ocio</button>
+              <button class="btn-ahorro">Ahorro</button>
+              <button class="btn-otros">Otros</button>
+              <button class="btn-ingresos">Ingresos</button>
+          </div>
+
+          <div class="detalle-despli">
+            <ul></ul>
+          </div>
+      </section>
+
+    </main>
+    <script type="module" src="/src/sections.ts"></script>
+  </body>
+</html>

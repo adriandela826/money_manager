@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="src/index.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <img src="images/add.svg" alt="">
+        <ul>
+          <li> <img class="img-balance" src="images/balance.svg"> <a href="">Menu</a> </li>
+          <li> <img class="img-sections" src="images/sections.svg"> <a href="sections.html">Section</a>  </li>
+        </ul>       
+      </nav>
+    </header>
+
+    <main>
+      <h1>Menu Principal</h1>
+
+      <section class="stats">
+        <div class="grid">
+            <ul>
+              <li>
+                <span class="alimentacion">Alimentación</span> 
+                <span class="gasto-alimentacion"> s/0</span> 
+                <span class="perc-alimentacion"> (0%)</span> 
+              </li>
+              <li>
+                <span class="educacion">Educación</span> 
+                <span class="gasto-educacion"> s/0</span> 
+                <span class="perc-educacion"> (0%)</span> 
+              </li>
+              <li>
+                <span class="trabajo">Trabajo</span> 
+                <span class="gasto-trabajo"> s/0</span> 
+                <span class="perc-trabajo"> (0%)</span> 
+              </li>
+              <li>
+                <span class="salud">Salud</span> 
+                <span class="gasto-salud"> s/0</span> 
+                <span class="perc-salud"> (0%)</span> 
+              </li>              
+              <li>
+                <span class="ocio">Ocio</span> 
+                <span class="gasto-ocio"> s/0</span> 
+                <span class="perc-ocio"> (0%)</span> 
+              </li>
+              <li>
+                <span class="ahorro">Ahorro</span> 
+                <span class="gasto-ahorro"> s/0</span> 
+                <span class="perc-ahorro"> (0%)</span> 
+              </li>
+              <li>
+                <span class="otros">Otros</span> 
+                <span class="gasto-otros"> s/0</span> 
+                <span class="perc-otros"> (0%)</span> 
+              </li>
+            </ul>
+        </div>
+        <canvas 
+        id="myChart">
+        </canvas>
+
+      </section>
+
+      <section class="balan-agregar">
+
+        <div class="agregar"> 
+          <h3>Agregar: Gasto o Ingreso</h3>
+          <ol>
+            <li> Gasto/Ingreso:
+              <select id="input-tipo">
+                <option value="-">-</option>
+                <option value="gasto">Gasto</option>
+                <option value="ingreso">Ingreso</option>
+              </select>
+            </li>
+            <li> ¿En que categoria?
+              <select id="input-categoria">
+                <option value="-">-</option>
+                <option value="alimentacion">Alimentación</option>
+                <option value="educacion">Educación</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="salud">Salud</option>
+                <option value="ocio">Ocio</option>
+                <option value="ahorro">Ahorro</option>
+                <option value="otros">Otros</option>
+              </select>
+            </li>
+            <li> Fecha:
+              <input id="input-fecha" type="date" required>
+            </li>
+            <li> Monto:
+              <input id="input-monto" type="number" required>
+            </li>
+            <li> Descripción:
+              <input id="input-desc" type="text" maxlength="40" required>
+            </li>
+            <li>
+              <button id="reset">Reinciar</button>
+              <button id="add">Agregar</button> 
+            </li>
+          </ol>
+        </div>
+
+        <div class="balance">
+          <h3>Balance mensual:</h3>
+          <p class="total-dinero">Saldo mensual 
+            <span>= S/0</span></p>
+          <p class="gastado-dinero">Dinero gastado 
+            <span>= S/0</span></p>
+          <p class="restante-dinero">Dinero restante
+            <span>= S/0</span></p>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

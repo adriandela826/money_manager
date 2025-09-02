@@ -1,0 +1,160 @@
+/* Header para todos HTML */
+
+*{
+margin: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+box-sizing: border-box;
+} 
+
+header{
+  padding: 5px ;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.menu{
+  display: flex;
+  justify-content:space-between;
+}
+
+.menu>img{
+  width: 40px;
+}
+
+.menu ul{
+  list-style: none;
+  display: flex;  
+}
+
+.menu ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 50px; 
+}
+
+.menu ul [class*="img"] {
+  width: 30px;
+}
+
+.menu ul a{
+  font-size: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu ul li:hover{
+  background-color: grey;
+}
+
+/* Detalles de gastos */
+
+main{
+  max-width: 100%;
+}
+
+#detalle-comple{
+  margin: 15px;
+}
+
+#detalle-comple h1{
+  padding: 10px 0;
+}
+
+.botones{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.botones [class*="btn"]{
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.detalle-despli{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.detalle-despli ul{
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 20px 30px;
+}
+
+.detalle-despli ul [class*="registro"]{
+  list-style: none;
+  border-radius: 10px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+}
+
+[class*="oculto"]{
+  display: none !important;
+}
+
+.detalle-despli ul [class*="registro"] div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.detalle-despli ul [class*="registro"] div:nth-child(2){
+  align-items: start;
+  width: 230px;
+  max-width: 80%;
+}
+
+.detalle-despli ul [class*="registro"] div:nth-child(4){
+font-weight: bold;
+}
+
+.detalle-despli ul [class*="registro"] div:nth-child(4):hover{
+  background-color: grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Aqui todos los detalles de las secciones */
+.mes{ 
+   font-size: 10px;
+
+}
+
+.dia{
+ font-size: 20px;
+ font-weight: bold;  
+}
+
+.anio{
+   font-size: 10px;
+}
+
+.cat{
+  font-size: 12px;
+  font-weight: bold;  
+}
+
+.desc{
+  font-size: 10px;
+}
+
+[class*="monto"]{
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+[class*="red"]{
+  color: red;
+}
+
+[class*="blue"]{
+  color: blue;
+}
