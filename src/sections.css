@@ -28,7 +28,6 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
   border-radius: 50px;
   padding: 10px 50px; 
 }
@@ -43,9 +42,9 @@ header{
   color: inherit;
 }
 
-.menu ul li:hover{
-  background-color: grey;
-}
+.menu ul li a:hover{
+  text-decoration: underline;
+} 
 
 /* Detalles de gastos */
 
